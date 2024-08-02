@@ -1,0 +1,24 @@
+name: Update README with Dev.to Reading List
+on: 
+ schedule:
+    - cron: "0 */6 * * *" # Run daily, adjust as needed
+ workflow_dispatch:
+ push:
+    branches: ["main", "dev.to-reading-list"]
+
+jobs:
+  save-articles:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Run DevtoGitHub
+        uses: Anmol-Baranwal/DevtoGitHub@v1
+        with:
+          devApiKey: ${{ secrets.DEV_TOKEN }}
+          saveArticles: false # default is true
+          readingList: true
+          outputDirReading: "read" # this will save reading list in read/Readme.md
+          readTime: true
+          synchronizeReadingList: true
