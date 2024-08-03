@@ -3,7 +3,7 @@
   
   # I've Created A Github List of Awesome Repositories
   
-  **Tags:** `github`
+  **Tags:** github
 
   **Published At:** 8/2/2024, 5:06:42 PM
 
