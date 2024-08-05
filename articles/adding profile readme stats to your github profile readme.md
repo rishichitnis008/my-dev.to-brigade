@@ -3,7 +3,7 @@
   
   # Adding Profile README Stats to Your Github Profile README
   
-  **Tags:** `github`, `githubactions`, `beginners`, `tutorial`
+  **Tags:** github, githubactions, beginners, tutorial
 
   **Published At:** 8/3/2024, 5:56:41 PM
 
